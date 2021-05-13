@@ -12,6 +12,10 @@ poetry add black
 poetry install
 poetry update
 poetry run django-admin startproject djcrm .
+poetry run python manage.py migrate
+poetry run python manage.py startapp leads
+poetry run python manage.py makemigrations
+
 ```
 
 
